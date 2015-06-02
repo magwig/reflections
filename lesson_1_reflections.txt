@@ -1,0 +1,45 @@
+Use fc from command prompt (not inside gitbash)
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It was able to quickly show where the files changed and where any typos may exist
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It will allow you to see the evolution of the code and where bugs were introduced;
+    It will save time in finding bugs as well as restoring previous versions if changes need to be rolled back.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The manual method allows you to better control (name?) your interim versions so that you can
+    easily go back to the desired versions.
+    It also allows you to save at logical checkpoints, rather than arbitrary points.
+    It reduces the probability that a saved commit produces compoile or link errors.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Probably because of what it typically is used for saving. Documents are typically singular elements, so 
+    since Google Docs is primaru=ily used for documents, it makes sense that it performs the way that it does.
+    
+    However, from a developer's standpoint, many files can be changed in a project and it makes sense to save
+    all of the changes to the project at the same time. This also prevents me from inadvertantly missing the
+    saving of a file.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log shows all of the versions of a file. You can get the version IDs and then use git diff to see the
+    individual changes that occurred between versions.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    I know I can always go back to a known state that works.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    To better understand how/when to use it so that I can be more efficient in my future work.
