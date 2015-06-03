@@ -2,3 +2,42 @@ What happens when you initialize a repository? Why do you need to do it?
 
 	It creates the .git folder which will contain the commit history.
 
+How is the staging area different from the working directory and the repository? What value do you
+think it offers?
+        The staging area contains versions of the file to commit to the repository. It provides a
+        safeguard so that changes get committed in an orderly fashion.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+       By using "git diff" and "git diff --staged", you can see exactly what changes have been made between
+       the working directory and the staging area and the staging area and the repository, to ensure the
+       exact changes that are needed for the logical change are actually going in.
+
+What are some situations when branches would be helpful in keeping your history organized? How
+would branches help?
+
+	When adding an experimental feature; when freezing the code while build/integration testing is going on; when
+	repositories are set up so that there is a production repository of clean code and a development repository
+	which provides a sandbox for the engineers to work with prior to a formal release (merge with the production
+	repository).
+
+How do diagrams help you visualize the branch structure?
+
+	It identifies where you are in the code evolution and what changes you should expect to see in the checkout.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way
+we do?
+
+	It provides a single branch containing all of the changes that were committed since the two branches were made. By
+	representing it in the diagram the way we do, we are able to see what branches (labels) still exist after the merging
+	is completed.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	Pros: It definitely makes the merges faster by automatically folding in changes from different sources when there is
+	no conflict. The fact that it doesn't merge in when there are conflicts brings the conflict to the attention of
+	the team.
+	Cons: Changes that aren't conflicts in code but still cause issues with other changes folded in are not easy
+	to detect.
+
+
